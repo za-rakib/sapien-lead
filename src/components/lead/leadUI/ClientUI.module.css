@@ -1,0 +1,91 @@
+.clients {
+  flex: 5;
+  background-color: rgb(228, 228, 228);
+  padding: 10px;
+}
+.clientHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin-top: 30px;
+}
+.clientHeaderLeft {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.clientHeaderLeftIcon {
+  font-size: 25px !important;
+  margin-right: 10px;
+  color: rgb(98, 98, 98);
+}
+.clientHeaderInput {
+  height: 30px;
+  width: 350px;
+  border: 2px solid rgb(39, 39, 39);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.clientHeaderRightButton {
+  display: flex;
+  padding: 10px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  padding: 3px 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.clientHeaderRightButtonText {
+  font-weight: bold;
+}
+
+.clientHeaderRightButtonIcon {
+  font-size: 25px !important;
+  margin-left: 15px;
+}
+.table {
+  margin-top: 40px;
+}
+.tableHeader > tr > th {
+  color: rgb(44, 44, 44);
+  font-weight: bold;
+  font-size: 20px;
+}
+.tableBody {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: #2d2b52;
+  border-collapse: separate;
+  border-spacing: 0 20px;
+  border: none;
+  text-align: center;
+}
+.dataRow {
+  margin-top: 10px;
+  border-bottom: 7px solid #e4e4e4;
+}
+.dataRow > td {
+  color: aliceblue;
+}
+.statusButton {
+  padding: 5px 20px;
+  background-color: rgb(255, 255, 255);
+  color: #2d2b52;
+  border: none;
+  box-shadow: rgba(86, 86, 176, 0.25) 0px 2px 5px -1px;
+}
+.clientTableIcon {
+  height: 30px;
+  width: 30px;
+  background-color: #8568f8;
+  padding: 5px;
+  font-size: 25px !important;
+  color: rgb(249, 249, 249);
+}
