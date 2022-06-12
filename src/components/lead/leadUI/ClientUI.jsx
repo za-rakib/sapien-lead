@@ -11,6 +11,7 @@ import "@szhsin/react-menu/dist/transitions/slide.css";
 import dayjs from "dayjs";
 import UpdateModal from "../updateModal/UpdateModal";
 import { DELETE_LEAD } from "../../../Graphql/Client/Mutation";
+import View from "../View/View";
 
 const ClientUI = () => {
   const [modalShow, setModalShow] = useState(false);
@@ -31,6 +32,8 @@ const ClientUI = () => {
         rowData={rowData}
         updateModalShow={updateModalShow}
       />
+      <View viewModalShow={viewModalShow} setViewModalShow={setViewModalShow}
+      rowData={rowData}/>
       <ClientsTable
         data={data}
         setUpdateModalShow={setUpdateModalShow}
@@ -66,7 +69,7 @@ const ClientsTable = ({
   setViewModalShow,
 }) => {
   const [deleteLead, { error }] = useMutation(DELETE_LEAD);
-  
+
   const handleRemove = (id) => {
     console.log({ error });
     deleteLead({

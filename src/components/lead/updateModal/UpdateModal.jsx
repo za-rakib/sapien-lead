@@ -43,14 +43,14 @@ const UpdateModal = ({ updateModalShow, setUpdateModalShow, rowData }) => {
           Notes: data.notes,
         },
       },
-      // onCompleted: (res) => {
-      //   console.log(res);
+      onCompleted: (res) => {
+        //console.log(res);
 
-      //    if (res) window.location.reload();
-      // },
-      // onError: (err) => {
-      //   console.log(err);
-      // },
+         if (res) window.location.reload();
+      },
+      onError: (err) => {
+        console.log(err);
+      },
     });
   };
   return (
